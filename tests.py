@@ -17,7 +17,7 @@ from stream_exercise import StreamProcessor
 failures = 0
 
 
-value = "234761640930110349378289194"
+value = u"234761640930110349378289194"
 expected = 5
 my_stream_processor = StreamProcessor(io.StringIO(value))
 result = my_stream_processor.process()
@@ -29,7 +29,7 @@ message += "SUCCESS" if success else "FAILURE"
 print(message)
 
 
-value = "03050403020309060707070708"
+value = u"03050403020309060707070708"
 expected = 10
 my_stream_processor = StreamProcessor(io.StringIO(value))
 result = my_stream_processor.process()
@@ -41,7 +41,7 @@ message += "SUCCESS" if success else "FAILURE"
 print(message)
 
 
-value = "3"
+value = u"3"
 expected = 0
 my_stream_processor = StreamProcessor(io.StringIO(value))
 result = my_stream_processor.process()
@@ -53,7 +53,7 @@ message += "SUCCESS" if success else "FAILURE"
 print(message)
 
 
-value = "2347"
+value = u"2347"
 expected = 2
 my_stream_processor = StreamProcessor(io.StringIO(value))
 result = my_stream_processor.process()
@@ -65,7 +65,7 @@ message += "SUCCESS" if success else "FAILURE"
 print(message)
 
 
-value = "23478"
+value = u"23478"
 expected = 2
 my_stream_processor = StreamProcessor(io.StringIO(value))
 result = my_stream_processor.process()

@@ -7,7 +7,7 @@ import sys
 
 from stream_exercise import StreamProcessor
 
-value = sys.argv[1]
+value = sys.argv[1].decode("utf-8")
 
 my_stream_processor = StreamProcessor(io.StringIO(value))
 result = my_stream_processor.process()
